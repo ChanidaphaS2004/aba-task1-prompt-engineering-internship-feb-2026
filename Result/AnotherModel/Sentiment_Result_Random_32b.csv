@@ -1,0 +1,257 @@
+﻿ID,Topic,Selected Content,Ground_Truth_Formatted,Final_Vote,Round1_Output,Round1_Reasoning,Round2_Output,Round2_Reasoning,Round3_Output,Round3_Reasoning
+451,Room,Rooms are a nice size but is unfortunately situated on top of the outside bar area. Twin beds are provided and the pillows is not comfortable at all. The shower in the bathroom is open in-front which results in the whole floor being wet. Property have a great potential with some care.,Negative,Negative,Negative,"The content mentions that the pillows are not comfortable and the shower causes the floor to be wet, indicating dissatisfaction with the room.",Negative,"The content mentions multiple negative aspects about the room, such as uncomfortable pillows and an open shower leading to a wet floor, which indicate dissatisfaction.",Negative,"The content expresses dissatisfaction with the pillows and bathroom layout, indicating negative sentiment towards the Room aspect."
+662,Facility,"Nice accommodation, parking in the hotel area, Beautiful accommodation,",Positive,Positive,Positive,The opinion terms 'Nice' and 'Beautiful' explicitly express satisfaction with the accommodation facilities.,Positive,"The content uses positive adjectives like 'Nice' and 'Beautiful' to describe the accommodation, indicating satisfaction with the facilities.",Positive,"The input content uses positive adjectives like ""nice"" and ""beautiful"" to describe the accommodation and mentions parking, which relates to hotel facilities. These indicate satisfaction with the facilities.
+
+```json"
+756,Food,it would be nice if there was a breakfast buffet,Negative,Positive,Positive,"The input content expresses a desire for a breakfast buffet, using the word ""nice,"" which conveys satisfaction. This directly relates to the 'Food' aspect and indicates a positive sentiment.
+
+```json",Off,"The input expresses a desire for a breakfast buffet, indicating a neutral stance as it neither praises nor complains about current food offerings.
+
+```json",Negative,"The input expresses a desire for something missing, indicating dissatisfaction with the current situation regarding food.
+
+```json"
+391,Facility,it is recently renovated building,Positive,Positive,Positive,"The phrase 'recently renovated' implies a positive sentiment as it suggests improvements or updates, indicating satisfaction with the facility.",Off,"The input content mentions that the building has been recently renovated but doesn't express any explicit sentiment about it. While renovations can imply improvements, the statement is factual rather than opinionated.
+
+```json",Positive,"The input content ""it is recently renovated building"" suggests that the facility has undergone improvements, implying a positive view.
+
+```json"
+131,Off,"Using the air conditioner was great after a hot day outside. but you can take the 425 bus, which arrives fairly often at the station near the hotel.",Positive,Off,Off,"The input content discusses using an air conditioner positively and mentions taking a frequently arriving bus. Both points are factual without explicit sentiment towards the 'Off' topic, making the sentiment polarity 'Off'.
+
+```json",Off,"The content discusses using an air conditioner and taking a bus, which aren't related to the 'Off' topic. The parts are either factual or relate to other aspects.
+
+```json",Off,"The input content discusses positive aspects of the air conditioner and factual information about bus service, which are unrelated to the 'Off' aspect category. Therefore, the sentiment is neutral or irrelevant."
+208,Location,"quiet area , easy find parking places",Positive,Positive,Positive,"The input content highlights two positive aspects of the location: being quiet and having easy access to parking. These are clear indicators of satisfaction, making the sentiment positive.
+
+```json",Positive,"The terms 'quiet area' and 'easy find parking places' indicate a favorable opinion about the location's tranquility and accessibility, which are positive aspects.",Positive,"The content describes the area as quiet and parking as easy to find, which are positive attributes for a location. 
+
+```json"
+536,Facility,An intimate hotel,Positive,Positive,Off,"The input describes the hotel as intimate without mentioning specific facilities. Since there are no explicit opinions about the facilities themselves, the sentiment is neutral.
+
+```json",Positive,The term 'intimate' suggests a positive and pleasant atmosphere related to the hotel's facilities.,Positive,"The input describes the hotel as ""intimate,"" which is a positive adjective indicating a favorable view of the facility.
+
+```json"
+121,Off,#NAME?,Off,Off,Off,"#NAME? is a placeholder or error message, not providing any sentiment or relevant information.",Off,The input is an error message and does not express any sentiment related to being turned off.,Off,The input content '#NAME?' does not provide any meaningful information related to hotel aspects and is likely an error or placeholder. It contains no opinion terms and is irrelevant to the target topic.
+473,Room,Very nice rooms. Clean.,Positive,Positive,Positive,The content uses 'nice' and 'Clean' as opinion terms that express satisfaction with the rooms.,Positive,"The content uses positive adjectives like 'nice' and 'Clean', indicating satisfaction with the rooms.",Positive,The opinion terms 'nice' and 'Clean' explicitly indicate satisfaction with the room's condition.
+212,Facility,Beautiful hotel,Positive,Positive,Positive,"The input content ""Beautiful hotel"" relates to the facility aspect with a positive sentiment due to the adjective ""beautiful.""
+
+```json",Positive,"The input content ""Beautiful hotel"" uses the adjective ""beautiful,"" which conveys a positive sentiment. Since the target topic is 'Facility,' referring to the physical aspects of the hotel, this description likely pertains to the facility's appearance and structure. Thus, the sentiment polarity is Positive.
+
+```json",Positive,"The input ""Beautiful hotel"" refers to the facility aspect with the opinion term ""beautiful,"" indicating a positive sentiment about the hotel's appearance.
+
+```json"
+83,Room,Room was clean and comfortable.,Positive,Positive,Positive,The terms 'clean' and 'comfortable' express positive sentiments about the room.,Positive,"The input content uses positive adjectives to describe the room, indicating satisfaction.
+
+```json",Positive,"The terms 'clean' and 'comfortable' explicitly convey satisfaction with the room, indicating a positive sentiment."
+635,Facility,"The hotel is good,",Positive,Positive,Positive,"The input content expresses a positive sentiment towards the facility of the hotel because the word ""good"" shows satisfaction with the overall hotel experience, which includes the facilities.
+
+```json",Off,The term 'good' does not explicitly reference the facility aspect and is too vague to determine sentiment polarity.,Positive,The word 'good' is a positive opinion term indicating satisfaction with the hotel's facilities.
+287,Facility,Allowed to take dog was the reason for booking.,Positive,Positive,Positive,The content expresses satisfaction with the facility's pet policy being a key reason for booking.,Positive,"The input content highlights satisfaction with the Facility due to allowing dogs, indicating a favorable stance. 
+
+```json",Positive,"The content indicates satisfaction with the facility's policy allowing dogs, which was a key factor in making the booking decision."
+182,Location,Closure to the Airport,Positive,Positive,Positive,"The phrase 'Closure to the Airport' suggests proximity to the airport, which is typically considered a positive aspect for location convenience.",Positive,"The phrase 'Closure to the Airport' indicates proximity, which is typically seen as a positive attribute for a location, especially near transportation hubs.",Positive,"The input indicates that the location is near the airport, which is typically seen as a positive aspect. 
+
+```json"
+456,Room,"They need to put a lock to the bathroom and a shower glass door inside or else it gets messy.
+  -wifi is not good",Negative,Negative,Negative,"The content expresses dissatisfaction regarding the need for additional security measures in the bathroom, indicating an unfavorable opinion about the room's facilities.",Negative,"The content discusses issues with the room's facilities (bathroom and shower) and a separate issue with WiFi. Since we're focusing on 'Room', only the first part is relevant. The criticism about needing locks indicates dissatisfaction.
+
+```json",Negative,"The content expresses dissatisfaction regarding the bathroom setup, indicating that without proper locks and doors, it becomes messy. This reflects a negative sentiment towards the room."
+456,Room,rooms are very well maintained.,Positive,Negative,Negative,"The content expresses dissatisfaction regarding the need for additional security measures in the bathroom, indicating an unfavorable opinion about the room's facilities.",Negative,"The content discusses issues with the room's facilities (bathroom and shower) and a separate issue with WiFi. Since we're focusing on 'Room', only the first part is relevant. The criticism about needing locks indicates dissatisfaction.
+
+```json",Negative,"The content expresses dissatisfaction regarding the bathroom setup, indicating that without proper locks and doors, it becomes messy. This reflects a negative sentiment towards the room."
+456,Room,"They need to put a lock to the bathroom and a shower glass door inside or else it gets messy.
+  -wifi is not good",Negative,Negative,Negative,"The content expresses dissatisfaction regarding the need for additional security measures in the bathroom, indicating an unfavorable opinion about the room's facilities.",Negative,"The content discusses issues with the room's facilities (bathroom and shower) and a separate issue with WiFi. Since we're focusing on 'Room', only the first part is relevant. The criticism about needing locks indicates dissatisfaction.
+
+```json",Negative,"The content expresses dissatisfaction regarding the bathroom setup, indicating that without proper locks and doors, it becomes messy. This reflects a negative sentiment towards the room."
+456,Room,rooms are very well maintained.,Positive,Negative,Negative,"The content expresses dissatisfaction regarding the need for additional security measures in the bathroom, indicating an unfavorable opinion about the room's facilities.",Negative,"The content discusses issues with the room's facilities (bathroom and shower) and a separate issue with WiFi. Since we're focusing on 'Room', only the first part is relevant. The criticism about needing locks indicates dissatisfaction.
+
+```json",Negative,"The content expresses dissatisfaction regarding the bathroom setup, indicating that without proper locks and doors, it becomes messy. This reflects a negative sentiment towards the room."
+635,Location,"Great location. 10 minutes by bus from and to the airport. 10 minutes walk to the beach and cafes by the beach. It takes 40 minutes to walk along the promenade to the city, but it's nice.",Positive,Positive,Positive,"The content uses 'Great' and 'nice' to express satisfaction with the location's proximity to key areas like the airport, beach, and city.",Positive,"The content uses explicit positive opinion terms like 'great' and 'nice' to describe the location. The detailed descriptions of proximity to the airport, beach, and city further support a favorable view.",Positive,"The content explicitly uses positive terms like 'great' and describes convenient locations ('10 minutes by bus', '10 minutes walk'), which contribute to a favorable sentiment towards the location."
+40,Room,"My only real observation was that there was no net curtain or blind so one needed to ensure that the curtain was closed,",Negative,Negative,Negative,"The absence of a net curtain or blind indicates dissatisfaction with the room's privacy features, leading to the need for manual closure of curtains.",Negative,"The absence of a net curtain or blind indicates dissatisfaction with the room's amenities, suggesting a negative sentiment.",Negative,The absence of net curtains or blinds implies dissatisfaction regarding privacy and convenience in the room.
+636,Staff,a very friendly staff.,Positive,Positive,Positive,The term 'friendly' indicates satisfaction and a positive sentiment towards the staff.,Positive,"The input content expresses satisfaction towards the staff using the term ""friendly,"" indicating a favorable stance. 
+
+```json",Positive,"The content uses the word 'friendly', which is a positive opinion term indicating satisfaction with the staff."
+287,Room,"Very clean, nice bed and linen.",Positive,Negative,Negative,"The presence of a smell in the bathroom or water area suggests an issue with cleanliness, which reflects negatively on the room.",Negative,"The input content mentions an unpleasant odor originating from the bathroom or water area within the room. This indicates dissatisfaction with the room's condition.
+
+```json",Negative,"The content discusses an unpleasant odor in the bathroom/water area of the room, indicating dissatisfaction. 
+
+```json"
+287,Room,Some smell from bathroom/water.,Negative,Negative,Negative,"The presence of a smell in the bathroom or water area suggests an issue with cleanliness, which reflects negatively on the room.",Negative,"The input content mentions an unpleasant odor originating from the bathroom or water area within the room. This indicates dissatisfaction with the room's condition.
+
+```json",Negative,"The content discusses an unpleasant odor in the bathroom/water area of the room, indicating dissatisfaction. 
+
+```json"
+287,Room,"Very clean, nice bed and linen.",Positive,Negative,Negative,"The presence of a smell in the bathroom or water area suggests an issue with cleanliness, which reflects negatively on the room.",Negative,"The input content mentions an unpleasant odor originating from the bathroom or water area within the room. This indicates dissatisfaction with the room's condition.
+
+```json",Negative,"The content discusses an unpleasant odor in the bathroom/water area of the room, indicating dissatisfaction. 
+
+```json"
+287,Room,Some smell from bathroom/water.,Negative,Negative,Negative,"The presence of a smell in the bathroom or water area suggests an issue with cleanliness, which reflects negatively on the room.",Negative,"The input content mentions an unpleasant odor originating from the bathroom or water area within the room. This indicates dissatisfaction with the room's condition.
+
+```json",Negative,"The content discusses an unpleasant odor in the bathroom/water area of the room, indicating dissatisfaction. 
+
+```json"
+347,Room,Rooms were also exceptional in their cleanliness and although compact had everything that you might need for your stay. I,Positive,Positive,Positive,"The input content expresses a positive sentiment towards the 'Room' aspect. The opinion term ""exceptional"" highlights satisfaction with cleanliness, and the mention of having everything needed further reinforces the favorable view.
+
+```json",Positive,"The input content highlights the exceptional cleanliness of the rooms and their adequacy despite being compact. The use of ""exceptional"" and mentioning everything needed for a stay indicates satisfaction.
+
+```json",Positive,"The content explicitly praises the room's cleanliness with the term 'exceptional,' indicating a favorable opinion."
+347,Room,Rooms were also exceptional in their cleanliness and although compact,Negative,Positive,Positive,"The input content expresses a positive sentiment towards the 'Room' aspect. The opinion term ""exceptional"" highlights satisfaction with cleanliness, and the mention of having everything needed further reinforces the favorable view.
+
+```json",Positive,"The input content highlights the exceptional cleanliness of the rooms and their adequacy despite being compact. The use of ""exceptional"" and mentioning everything needed for a stay indicates satisfaction.
+
+```json",Positive,"The content explicitly praises the room's cleanliness with the term 'exceptional,' indicating a favorable opinion."
+347,Room,Rooms were also exceptional in their cleanliness and although compact had everything that you might need for your stay. I,Positive,Positive,Positive,"The input content expresses a positive sentiment towards the 'Room' aspect. The opinion term ""exceptional"" highlights satisfaction with cleanliness, and the mention of having everything needed further reinforces the favorable view.
+
+```json",Positive,"The input content highlights the exceptional cleanliness of the rooms and their adequacy despite being compact. The use of ""exceptional"" and mentioning everything needed for a stay indicates satisfaction.
+
+```json",Positive,"The content explicitly praises the room's cleanliness with the term 'exceptional,' indicating a favorable opinion."
+347,Room,Rooms were also exceptional in their cleanliness and although compact,Negative,Positive,Positive,"The input content expresses a positive sentiment towards the 'Room' aspect. The opinion term ""exceptional"" highlights satisfaction with cleanliness, and the mention of having everything needed further reinforces the favorable view.
+
+```json",Positive,"The input content highlights the exceptional cleanliness of the rooms and their adequacy despite being compact. The use of ""exceptional"" and mentioning everything needed for a stay indicates satisfaction.
+
+```json",Positive,"The content explicitly praises the room's cleanliness with the term 'exceptional,' indicating a favorable opinion."
+521,Staff,nice hosts,Positive,Positive,Positive,"The input content ""nice hosts"" clearly expresses satisfaction towards the staff. The word ""nice"" is a positive opinion term indicating approval.",Positive,"The input content ""nice hosts"" uses the word ""nice,"" which is a positive adjective describing the staff (hosts). This indicates satisfaction and approval, fitting the Positive sentiment polarity.
+
+```json",Positive,"The word 'nice' explicitly conveys a positive sentiment towards the staff, indicating satisfaction."
+770,Location,"There was a constant stench coming from outside,",Negative,Negative,Negative,"The content expresses dissatisfaction regarding the smell from outside, directly impacting the Location aspect. The use of ""stench"" clearly conveys a negative sentiment.
+
+```json",Negative,"The input content expresses dissatisfaction with the location due to an unpleasant smell. The opinion term ""stench"" indicates a negative sentiment.
+
+```json",Negative,"The phrase 'constant stench' indicates dissatisfaction with the environmental condition of the location, expressing a negative sentiment."
+399,Room,and the room was clean and ready by 12 to check in.,Positive,Positive,Positive,"The content uses 'clean' to positively describe the room's condition and 'ready by 12' to indicate timely preparation, both of which are favorable.",Positive,"The term 'clean' explicitly indicates satisfaction with the condition of the room, contributing to a positive sentiment.",Positive,"The input content describes the room as ""clean,"" which is a clear positive indicator. The rest of the sentence provides factual information about readiness but does not affect the sentiment towards the room itself.
+
+```json"
+259,Room,only thing was the bathroom floor got wet from the shower and became very slippery. needs two foot towels rather than just one.,Negative,Negative,Negative,"The content describes a negative experience with the room's bathroom, indicating dissatisfaction with the condition of the floor and the availability of foot towels.",Negative,"The content discusses issues in the bathroom related to safety and amenities, indicating dissatisfaction. This leads to a Negative sentiment classification for the Room aspect.
+
+```json",Negative,"The content highlights issues with the bathroom floor and towel quantity, indicating dissatisfaction with the room facilities. 
+
+```json"
+374,Room,"Rooms were a great size, very clean, modern and comfy.",Positive,Positive,Positive,"The input content contains several positive opinion terms related to the 'Room' aspect: ""great size"", ""very clean"", ""modern"", and ""comfy"". These terms clearly express satisfaction with the room's attributes.
+
+```json",Positive,"The input content uses several positive adjectives describing the rooms: ""great size,"" ""very clean,"" ""modern,"" and ""comfy."" These terms clearly express satisfaction with the room aspects.
+
+```json",Positive,"The input content expresses satisfaction with multiple attributes of the rooms, using explicitly positive language such as ""great size,"" ""very clean,"" ""modern,"" and ""comfy."" Each term indicates a favorable opinion towards the room aspect.
+
+```json"
+637,Room,Very clean.,Positive,Positive,Positive,The word 'clean' is an opinion term indicating satisfaction with the room. The modifier 'very' intensifies this positive sentiment.,Positive,"The input content ""Very clean"" explicitly praises the room's condition, indicating a positive sentiment. 
+
+```json",Positive,The phrase 'very clean' explicitly conveys a positive opinion about the room's condition.
+695,Room,with super clean rooms and comfortable beds.,Positive,Positive,Positive,"The content contains explicit positive opinion terms regarding the rooms, indicating satisfaction with their cleanliness and comfort.
+
+```json",Positive,"The input content describes the rooms as ""super clean"" and having ""comfortable beds,"" both of which are positive attributes directly related to the room aspect. 
+
+```json",Positive,"The content explicitly uses positive adjectives 'super clean' and 'comfortable' to describe the rooms, indicating satisfaction with the aspect."
+152,Off,We had to ask the taxi driver to make the call because it was cyprus number.,Negative,Off,Off,The content is purely factual without expressing any sentiment towards the specified topic.,Off,"The input content describes a situation where assistance was needed from a taxi driver due to an international number without expressing any sentiment. Therefore, it's classified as 'Off' because it's neutral.
+
+```json",Off,"The content is factual and does not contain any opinion terms expressing satisfaction, praise, dissatisfaction, or complaints. It merely states that the taxi driver had to make a call due to the Cyprus number."
+148,Off,Nothing,Off,Off,Off,The content 'Nothing' is neutral and does not express any sentiment towards the topic.,Off,"The input content is ""Nothing,"" which does not express any opinion or emotion regarding the specified aspect. It is neutral and lacks any sentiment terms, thus fitting into the 'Off' category.
+
+```json",Off,"The input content is ""Nothing"", which is a neutral statement without any expressed sentiment towards the target topic. Therefore, it fits under the 'Off' category.
+
+```json"
+700,Room,"Great bed, excellent cleaning",Positive,Positive,Positive,"The input content expresses positive sentiments about two specific elements of the room: the bed and the cleaning. The use of ""great"" and ""excellent"" clearly indicates satisfaction and praise for these aspects.
+
+```json",Positive,"The input content expresses satisfaction with two aspects of the room: the bed and the cleaning. The use of positive adjectives ""Great"" and ""excellent"" clearly indicates a favorable opinion towards the room.
+
+```json",Positive,"The content contains positive adjectives 'great' and 'excellent', which indicate satisfaction with the bed and cleaning aspects of the room."
+700,Room,"Small room, only one nescafe bag, no curtain in the bathroom.",Negative,Positive,Positive,"The input content expresses positive sentiments about two specific elements of the room: the bed and the cleaning. The use of ""great"" and ""excellent"" clearly indicates satisfaction and praise for these aspects.
+
+```json",Positive,"The input content expresses satisfaction with two aspects of the room: the bed and the cleaning. The use of positive adjectives ""Great"" and ""excellent"" clearly indicates a favorable opinion towards the room.
+
+```json",Positive,"The content contains positive adjectives 'great' and 'excellent', which indicate satisfaction with the bed and cleaning aspects of the room."
+700,Room,"Great bed, excellent cleaning",Positive,Positive,Positive,"The input content expresses positive sentiments about two specific elements of the room: the bed and the cleaning. The use of ""great"" and ""excellent"" clearly indicates satisfaction and praise for these aspects.
+
+```json",Positive,"The input content expresses satisfaction with two aspects of the room: the bed and the cleaning. The use of positive adjectives ""Great"" and ""excellent"" clearly indicates a favorable opinion towards the room.
+
+```json",Positive,"The content contains positive adjectives 'great' and 'excellent', which indicate satisfaction with the bed and cleaning aspects of the room."
+700,Room,"Small room, only one nescafe bag, no curtain in the bathroom.",Negative,Positive,Positive,"The input content expresses positive sentiments about two specific elements of the room: the bed and the cleaning. The use of ""great"" and ""excellent"" clearly indicates satisfaction and praise for these aspects.
+
+```json",Positive,"The input content expresses satisfaction with two aspects of the room: the bed and the cleaning. The use of positive adjectives ""Great"" and ""excellent"" clearly indicates a favorable opinion towards the room.
+
+```json",Positive,"The content contains positive adjectives 'great' and 'excellent', which indicate satisfaction with the bed and cleaning aspects of the room."
+670,Room,"The ""street side"" rooms are noisier than those facing the back.",Negative,Off,Off,"The content mentions 'cleanliness and design of the room' without any explicit or implicit opinion terms indicating satisfaction, praise, dissatisfaction, or complaints. It is purely factual.",Off,"The input content describes aspects of the room without expressing any sentiment. The words used are factual and do not indicate satisfaction or dissatisfaction.
+
+```json",Positive,The content highlights both cleanliness and design as positive aspects of the room.
+670,Room,The cleanliness and design of the room,Positive,Off,Off,"The content mentions 'cleanliness and design of the room' without any explicit or implicit opinion terms indicating satisfaction, praise, dissatisfaction, or complaints. It is purely factual.",Off,"The input content describes aspects of the room without expressing any sentiment. The words used are factual and do not indicate satisfaction or dissatisfaction.
+
+```json",Positive,The content highlights both cleanliness and design as positive aspects of the room.
+670,Room,"The ""street side"" rooms are noisier than those facing the back.",Negative,Off,Off,"The content mentions 'cleanliness and design of the room' without any explicit or implicit opinion terms indicating satisfaction, praise, dissatisfaction, or complaints. It is purely factual.",Off,"The input content describes aspects of the room without expressing any sentiment. The words used are factual and do not indicate satisfaction or dissatisfaction.
+
+```json",Positive,The content highlights both cleanliness and design as positive aspects of the room.
+670,Room,The cleanliness and design of the room,Positive,Off,Off,"The content mentions 'cleanliness and design of the room' without any explicit or implicit opinion terms indicating satisfaction, praise, dissatisfaction, or complaints. It is purely factual.",Off,"The input content describes aspects of the room without expressing any sentiment. The words used are factual and do not indicate satisfaction or dissatisfaction.
+
+```json",Positive,The content highlights both cleanliness and design as positive aspects of the room.
+180,Food,delicious breakfast (great freshly made croissants),Positive,Positive,Positive,"The input content uses positive adjectives like ""delicious"" and ""great"" to describe the breakfast and croissants, indicating satisfaction with the food.
+
+```json",Positive,"The input content uses positive adjectives like ""delicious"" and ""great"" to describe the breakfast and croissants, indicating a favorable opinion about the food.
+
+```json",Positive,"The input content uses explicit positive opinion terms like ""delicious"" and ""great,"" clearly indicating satisfaction with the food provided.
+
+```json"
+536,Location,"Location on +., close to the beach, gastronomy and the airport",Positive,Positive,Positive,"The input content highlights proximity to desirable locations such as the beach, gastronomy options, and the airport, all of which are positive indicators for a hotel's location.
+
+```json",Positive,"The content highlights positive attributes of the location by mentioning proximity to a beach, gastronomy options, and an airport, indicating satisfaction.
+
+```json",Positive,"The input highlights positive aspects of the location by mentioning its closeness to the beach, food spots, and airport. These are favorable factors for travelers.
+
+```json"
+114,Facility,It didn't have a pool,Negative,Positive,Positive,"The opinion term 'immaculately clean' explicitly conveys a positive sentiment towards the facility, as it praises the hotel's cleanliness.",Positive,"The term 'immaculately clean' explicitly conveys satisfaction with the hotel's cleanliness, which is a key component of the facility aspect.",Positive,"The sentence highlights the hotel's cleanliness, which is a favorable aspect of its facilities. The use of ""immaculately clean"" conveys strong satisfaction.
+
+```json"
+114,Facility,and the hotel was immaculately clean.,Positive,Positive,Positive,"The opinion term 'immaculately clean' explicitly conveys a positive sentiment towards the facility, as it praises the hotel's cleanliness.",Positive,"The term 'immaculately clean' explicitly conveys satisfaction with the hotel's cleanliness, which is a key component of the facility aspect.",Positive,"The sentence highlights the hotel's cleanliness, which is a favorable aspect of its facilities. The use of ""immaculately clean"" conveys strong satisfaction.
+
+```json"
+114,Facility,It didn't have a pool,Negative,Positive,Positive,"The opinion term 'immaculately clean' explicitly conveys a positive sentiment towards the facility, as it praises the hotel's cleanliness.",Positive,"The term 'immaculately clean' explicitly conveys satisfaction with the hotel's cleanliness, which is a key component of the facility aspect.",Positive,"The sentence highlights the hotel's cleanliness, which is a favorable aspect of its facilities. The use of ""immaculately clean"" conveys strong satisfaction.
+
+```json"
+114,Facility,and the hotel was immaculately clean.,Positive,Positive,Positive,"The opinion term 'immaculately clean' explicitly conveys a positive sentiment towards the facility, as it praises the hotel's cleanliness.",Positive,"The term 'immaculately clean' explicitly conveys satisfaction with the hotel's cleanliness, which is a key component of the facility aspect.",Positive,"The sentence highlights the hotel's cleanliness, which is a favorable aspect of its facilities. The use of ""immaculately clean"" conveys strong satisfaction.
+
+```json"
+28,Off,Thank you,Off,Off,Off,The input content 'Thank you' does not relate to any specific aspect category. It is a general expression of gratitude without any sentiment towards the topic.,Off,'Thank you' does not express any sentiment towards the 'Selected Content' aspect. It is a general expression of gratitude without specific opinion terms related to the topic.,Off,The content 'Thank you' is neutral and does not express any sentiment related to the target topic. It lacks explicit or implicit opinion terms regarding any specific aspect.
+190,Check-in,We had a very late (1am) self check-in self check-in which worked very well.,Positive,Positive,Positive,"The input content expresses satisfaction with the self-check-in process despite being late, indicating a positive sentiment towards Check-in.
+
+```json",Positive,"The content expresses satisfaction with the self check-in process, indicating a favorable stance.
+
+```json",Positive,"The phrase 'worked very well' indicates satisfaction with the self check-in process, despite the late hour."
+440,Room,Very modern rooms,Positive,Positive,Positive,"The input content ""Very modern rooms"" uses the adjective ""modern,"" which carries positive connotations, indicating satisfaction with the room's style. The intensifier ""very"" further emphasizes this favorable view.
+
+```json",Positive,"The input content ""Very modern rooms"" uses the opinion term 'modern' to express satisfaction with the room's design. This positive adjective clearly conveys approval, resulting in a Positive sentiment polarity.
+
+```json",Positive,"The input content uses the adjective ""modern"" to describe the rooms, which carries a positive connotation. The intensifier ""very"" further emphasizes this favorable view. Therefore, the sentiment polarity for 'Room' is Positive.
+
+```json"
+440,Room,"Bath room was cleaned rather superficially, so that medium nice with hair not being removed.",Negative,Positive,Positive,"The input content ""Very modern rooms"" uses the adjective ""modern,"" which carries positive connotations, indicating satisfaction with the room's style. The intensifier ""very"" further emphasizes this favorable view.
+
+```json",Positive,"The input content ""Very modern rooms"" uses the opinion term 'modern' to express satisfaction with the room's design. This positive adjective clearly conveys approval, resulting in a Positive sentiment polarity.
+
+```json",Positive,"The input content uses the adjective ""modern"" to describe the rooms, which carries a positive connotation. The intensifier ""very"" further emphasizes this favorable view. Therefore, the sentiment polarity for 'Room' is Positive.
+
+```json"
+440,Room,Very modern rooms,Positive,Positive,Positive,"The input content ""Very modern rooms"" uses the adjective ""modern,"" which carries positive connotations, indicating satisfaction with the room's style. The intensifier ""very"" further emphasizes this favorable view.
+
+```json",Positive,"The input content ""Very modern rooms"" uses the opinion term 'modern' to express satisfaction with the room's design. This positive adjective clearly conveys approval, resulting in a Positive sentiment polarity.
+
+```json",Positive,"The input content uses the adjective ""modern"" to describe the rooms, which carries a positive connotation. The intensifier ""very"" further emphasizes this favorable view. Therefore, the sentiment polarity for 'Room' is Positive.
+
+```json"
+440,Room,"Bath room was cleaned rather superficially, so that medium nice with hair not being removed.",Negative,Positive,Positive,"The input content ""Very modern rooms"" uses the adjective ""modern,"" which carries positive connotations, indicating satisfaction with the room's style. The intensifier ""very"" further emphasizes this favorable view.
+
+```json",Positive,"The input content ""Very modern rooms"" uses the opinion term 'modern' to express satisfaction with the room's design. This positive adjective clearly conveys approval, resulting in a Positive sentiment polarity.
+
+```json",Positive,"The input content uses the adjective ""modern"" to describe the rooms, which carries a positive connotation. The intensifier ""very"" further emphasizes this favorable view. Therefore, the sentiment polarity for 'Room' is Positive.
+
+```json"
+604,Off,everything in general,Off,Off,Off,"The input ""everything in general"" is a broad statement without specific sentiment towards any aspect, fitting the 'Off' label as it's neutral and not targeting any particular topic.
+
+```json",Off,The input content 'everything in general' does not express any sentiment or opinion towards the target topic and is considered neutral.,Off,"The input ""everything in general"" is vague and doesn't reference any specific aspect. It lacks explicit opinion terms, making it neutral and irrelevant to the given aspects.
+
+```json"
+436,Location,"This is a good transitioning for one night, like I had. Or just to sleep over.
+  Central location.",Positive,Positive,Positive,The phrase 'Central location' indicates a positive sentiment as it suggests convenience and desirability of the location.,Positive,"The input content mentions a ""central location,"" which typically indicates satisfaction due to convenience and accessibility.
+
+```json",Positive,"The content uses 'good' and describes the location as 'central,' indicating satisfaction with the location."
+726,Staff,Friendly staff.,Positive,Positive,Positive,"The input content uses the word ""friendly"" to describe the staff, which indicates a positive sentiment. 
+
+```json",Positive,"The input content ""Friendly staff"" uses the adjective ""friendly,"" which conveys satisfaction and praise for the staff. 
+
+```json",Positive,"The word 'friendly' conveys a positive sentiment towards the staff, indicating satisfaction."
