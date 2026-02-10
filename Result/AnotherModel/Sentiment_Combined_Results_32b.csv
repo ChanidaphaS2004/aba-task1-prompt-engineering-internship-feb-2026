@@ -1,0 +1,71 @@
+﻿ID,Topic,Selected Content,Final_Vote,Round1_Reasoning,Round1_Output,Round2_Reasoning,Round2_Output,Round3_Reasoning,Round3_Output
+1,Facility,"New, comfortable apartments",Positive,"The content uses 'new' and 'comfortable,' which are positive descriptors indicating satisfaction with the facility.",Positive,"The input content highlights ""new"" and ""comfortable,"" which are positive attributes for the Facility aspect.
+
+```json",Positive,The terms 'new' and 'comfortable' indicate satisfaction with the facility.,Positive
+1,Location,"close to the airport, to very clean beach.",Positive,"The phrase 'close to the airport' indicates convenience, which is positive. Additionally, 'to very clean beach' explicitly praises the cleanliness of the location.",Positive,"The sentiment towards the 'Location' aspect is Positive due to the favorable descriptions of proximity to the airport and cleanliness of the beach.
+
+```json",Positive,"The content highlights proximity to the airport and a clean beach, indicating satisfaction with the location.",Positive
+1,Staff,Staff is extremely helpful and easy to communicate with,Positive,"The content uses positive adjectives 'helpful' and 'easy to communicate with,' indicating satisfaction with the staff.",Positive,"The content uses explicit positive opinion terms such as 'extremely helpful' and 'easy to communicate with', which indicate satisfaction and praise towards the staff.",Positive,"The input highlights positive traits about the staff, such as being helpful and easy to communicate with, indicating satisfaction. 
+
+```json",Positive
+1,Food,"Tasty food on the first floor, comfortable restaurant for both cozy evenings and calm work to escape the heat in the midday",Positive,The word 'tasty' explicitly indicates satisfaction and praise for the food.,Positive,"The term 'Tasty' explicitly expresses satisfaction with the food, indicating a positive sentiment.",Positive,"The word 'tasty' explicitly indicates satisfaction and praise for the food, aligning with Positive polarity.",Positive
+1,Off,"on the first floor, to escape the heat in the midday, Nothing at all.",Off,"The input content discusses finding nothing on the first floor to escape the heat. This indicates an expectation of something that wasn't fulfilled, which can be seen as neutral or irrelevant in the context of the 'Off' aspect.
+
+```json",Off,The input content lacks explicit opinion terms related to any specific aspect. The phrase 'Nothing at all' suggests neutrality without indicating satisfaction or dissatisfaction.,Off,The content is neutral and does not express any opinion towards the specified aspect category.,Off
+3,Location,the location is great and near the airport. bus stop is very close.,Positive,The content uses positive adjectives like 'great' and highlights convenient locations such as being near the airport and having a nearby bus stop.,Positive,"The sentiment polarity for the 'Location' aspect is Positive. The opinion terms are ""great,"" ""near the airport,"" and ""very close."" These terms indicate satisfaction with accessibility, making the overall sentiment positive.
+
+```json",Positive,"The content explicitly states that 'the location is great,' which indicates satisfaction and a favorable stance toward the specified aspect of Location. Additionally, the proximity to the airport and bus stop reinforces the positive sentiment.",Positive
+4,Staff,Great stuff,Off,"The input ""Great stuff"" expresses a positive sentiment but does not specifically reference the staff. Without explicit mention of staff, it's unclear if this refers to them.
+
+```json",Off,"The content 'Great stuff' does not explicitly or implicitly reference the 'Staff' aspect, making it irrelevant for sentiment analysis towards this topic.",Off,"The input ""Great stuff"" uses a positive term but lacks specificity regarding the staff. Without explicit mention of the staff, the sentiment can't be confidently attributed to them.
+
+```json",Off
+4,Price,Great Quality/price,Positive,"The input content ""Great Quality/price"" uses the word ""Great,"" indicating satisfaction with both quality and price. This implies that the price is considered good or reasonable, leading to a positive sentiment.
+
+```json",Positive,"The input content ""Great Quality/price"" uses the opinion term ""Great"" to express satisfaction with both quality and price. Since our focus is on the aspect ""Price"", the positive sentiment towards the price aspect is evident.
+
+```json",Positive,"The input content uses ""Great"" as an opinion term that positively evaluates both Quality and price. Since we're focusing on Price, the sentiment is Positive because it's associated with a favorable opinion.
+
+```json",Positive
+4,Room,Clean,Positive,"The word 'Clean' indicates satisfaction with the room's condition, expressing a favorable stance.",Positive,"The term 'Clean' indicates satisfaction with the room's condition, which aligns with a positive sentiment.",Positive,"The input content ""Clean"" is an explicit positive opinion about the room. It indicates satisfaction with the room's condition.
+
+```json",Positive
+5,Room,Clean and modern with very comfortable beds,Positive,"The terms 'clean', 'modern', and 'very comfortable beds' indicate satisfaction with the room's condition and comfort.",Positive,"The input content describes the room with favorable adjectives indicating satisfaction.
+
+```json",Positive,"The content uses positive adjectives such as 'clean', 'modern', and 'very comfortable' to describe the room. These terms indicate satisfaction and a favorable stance towards the aspect of the room.",Positive
+5,Location,in a very convenient location.  An easy stroll to numerous nice restaurants and a great beach.,Positive,"The content uses words like 'convenient,' 'easy stroll,' and describes the location as having 'numerous nice restaurants' and a 'great beach.' These terms indicate satisfaction and praise for the area.",Positive,"The term 'convenient' explicitly indicates a positive sentiment towards the location. Additionally, phrases like 'easy stroll,' 'numerous nice restaurants,' and 'great beach' further support a favorable opinion about the location.",Positive,"The content uses positive terms like 'convenient', 'easy', 'nice', and 'great' to describe the location's accessibility and surrounding amenities.",Positive
+6,Room,The room was exceptionally clean with a really comfortable bed,Positive,"The input content highlights both the cleanliness of the room and the comfort of the bed, using strong positive adjectives like 'exceptionally clean' and 'really comfortable.' These terms indicate satisfaction with the room aspect. 
+
+```json",Positive,The terms 'exceptionally clean' and 'comfortable' express satisfaction with the room's condition and comfort.,Positive,The terms 'exceptionally clean' and 'really comfortable' indicate high satisfaction with the room's cleanliness and bed comfort.,Positive
+6,Off,We only stayed over night before heading to the airport.,Off,"The input content is factual without expressing sentiment towards any aspect.
+
+```json",Off,"The input content is a factual statement without any opinion terms related to the 'Off' category, making it neutral.",Off,"The input content provides factual information about staying overnight and heading to the airport without expressing any sentiment or opinion. Therefore, it is neutral and does not align with Positive or Negative polarities.",Off
+7,Off,great,Off,"The input ""great"" lacks specific context linking it to any of the valid topics. Without such context, it's irrelevant and thus falls under 'Off'.
+
+```json",Off,"The input content ""great"" is a general positive term without specific context linking it to any particular aspect. Since it doesn't relate to the target topic 'Off' and lacks specificity, it's classified as neutral.
+
+```json",Off,"The term 'great' is positive but does not specify a particular aspect, making it irrelevant to the target topic.",Off
+8,Location,nice location,Positive,The term 'nice' explicitly conveys a positive sentiment towards the location.,Positive,"The input content clearly states ""nice location,"" using the adjective ""nice"" to positively describe the aspect of 'Location'. 
+
+```json",Positive,"The input content uses the word ""nice,"" which is a positive opinion term about the location. 
+
+```json",Positive
+8,Staff,lovely personal,Positive,"The term 'lovely' is an explicit positive opinion indicating satisfaction. The phrase 'personal' suggests a favorable interaction, aligning with a positive sentiment towards the staff.",Positive,"The input content ""lovely personal"" conveys a positive sentiment towards the staff. The term ""lovely"" explicitly shows satisfaction, while ""personal"" suggests attentive service, both indicative of a favorable opinion.
+
+```json",Positive,"The term 'lovely' indicates a positive sentiment towards the staff, and 'personal' suggests a favorable interaction.",Positive
+8,Off,"renovated, nothing",Off,"The input content ""renovated, nothing"" is analyzed in relation to the topic 'Off'. The term ""renovated"" suggests an improvement but without a clear sentiment towards any specific aspect category. ""Nothing"" adds a neutral tone. Since the content doesn't express a sentiment related to any valid aspect and remains factual or irrelevant, it's classified as Off.
+
+```json",Off,"The content does not specify a particular aspect or sentiment towards it. 'Renovated' could imply positivity, but without context on the aspect, it remains neutral. 'Nothing' suggests absence but doesn't tie to any specific category.",Off,"The input content ""renovated, nothing"" doesn't express any sentiment towards the aspect. It's neutral or irrelevant, so it's classified as Off.
+
+```json",Off
+9,Staff,very helpful host showed us how nearby bus takes to town-cntre (and airport by the way,Positive,"The term 'helpful' explicitly conveys satisfaction and praise towards the staff, indicating a positive sentiment.",Positive,The term 'helpful' explicitly indicates satisfaction with the staff's assistance.,Positive,The term 'helpful' explicitly indicates satisfaction with the staff's assistance.,Positive
+9,Off,"couldn't eat breakfast due to dietary restrictions-but, so no need for 21 euro taxi), maybe possibility of purchasing fresh fruit or veg",Off,"The content discusses dietary restrictions and purchasing fresh fruit or veg, which are related to specific aspects like Food. However, since the target topic is 'Off', it doesn't align with any valid aspect category.",Off,"The input content is factual and does not express any sentiment related to the target topic.
+
+```json",Off,"The sentiment polarity for the 'Selected Content' in relation to the 'Off' topic is classified as Off because the content consists of factual statements without any opinion terms indicating satisfaction or dissatisfaction.
+
+```json",Off
+10,Room,Great modern room comfortable bed,Positive,"The input content uses positive adjectives like ""Great"" and mentions a ""comfortable bed,"" which are favorable aspects of the room.
+
+```json",Positive,"The input content positively describes the room with words like ""great"" and ""modern,"" indicating satisfaction. The comfortable bed adds to this positive assessment.
+
+```json",Positive,"The terms 'great', 'modern', and 'comfortable' indicate satisfaction with the room's quality and comfort.",Positive
