@@ -10,7 +10,7 @@ from tqdm import tqdm
 
 # ตั้งค่าที่อยู่ไฟล์ในเครื่อง (Local Path)
 INPUT_CSV_PATH = "../Data/data_sentiment_no_Off.csv" 
-OUTPUT_COMBINED_PATH = "../Result/Sentiment_All_Results_0-shotCoT_no_TopicOff_1.5b.csv"
+OUTPUT_COMBINED_PATH = "../Result/Sentiment_All_Results_0-shotCoT_EP2_1.5b.csv"
 
 print("✅ โหลด Library และตั้งค่า Path เรียบร้อย")
 
@@ -26,36 +26,59 @@ print(f"✅ เชื่อมต่อ Ollama (Model: {MODEL_NAME}) เรี�
 
 # %% [3] @title 3. ฟังก์ชันสกัดข้อมูล 
 def parse_deepseek_response(full_output):
-    
     # 1. สกัด Thinking Log (<think>...</think>)
-    think_match = re.search(r'<think>(.*?)</think>', full_output, re.DOTALL)
+    think_match = re.search(r'<think>(.*?)</think>', full_output, re.DOTALL | re.IGNORECASE)
     think_log = think_match.group(1).strip() if think_match else ""
     
-    # 2. สกัด JSON ดิบ 
-    clean_text_for_json = re.sub(r'<think>.*?</think>', '', full_output, flags=re.DOTALL)
-    json_match = re.search(r'\{.*\}', clean_text_for_json, re.DOTALL)
+    # 2. เตรียมข้อความส่วนที่เหลือ (ลบ <think> ออก)
+    clean_text = re.sub(r'<think>.*?</think>', '', full_output, flags=re.DOTALL | re.IGNORECASE).strip()
     
-    raw_json_str = ""
     sentiment = "Unknown"
-
+    raw_json_str = ""
+    
+    # --- STEP A: พยายามจัดการกับ JSON ---
+    json_match = re.search(r'\{.*\}', clean_text, re.DOTALL)
+    
     if json_match:
-        # ดึงก้อน JSON ดิบออกมา
         raw_json_str = json_match.group().strip()
         
-        raw_json_str = raw_json_str.replace("'", '"')
-        
+        # ลอง Parse JSON แบบปกติก่อน
         try:
-            # Parse เพื่อเอา Sentiment มาทำ Majority Vote
-            data = json.loads(raw_json_str)
-            sentiment = data.get("sentiment", "Unknown").capitalize()
+            # ซ่อม JSON เบื้องต้น: เปลี่ยน "" (Double double quotes) เป็น " อันเดียว 
+            # (เจอกับโมเดลตัวเล็กบ่อย)
+            fixed_json = raw_json_str.replace('""', '"')
+            data = json.loads(fixed_json)
+            res = data.get("sentiment", "")
+            if res.lower() in ['positive', 'negative']:
+                sentiment = res.capitalize()
         except:
-            match = re.search(r'\b(Positive|Negative)\b', raw_json_str, re.IGNORECASE)
-            if match: sentiment = match.group(1).capitalize()
+            # ถ้า JSON พัง ให้ใช้ Regex เจาะจงหาหลังคำว่า "sentiment": ภายในก้อน JSON นั้น
+            # วิธีนี้จะข้ามคำว่า negative ใน reasoning_trace ไปได้ครับ
+            fallback_json_match = re.search(r'["\']sentiment["\']\s*:\s*["\']\s*(Positive|Negative)', raw_json_str, re.IGNORECASE)
+            if fallback_json_match:
+                sentiment = fallback_json_match.group(1).capitalize()
+
+    # --- STEP B: Fallback กรณีไม่มี JSON หรือสกัดจาก JSON ไม่สำเร็จ ---
+    if sentiment == "Unknown":
+        # 1. หาในข้อความดิบ เจาะจงหลังคำว่า sentiment: (รองรับแบบมี ** หรือไม่มีก็ได้)
+        # Regex นี้จะมองหา "sentiment" -> ตามด้วย : -> ตามด้วย Positive หรือ Negative
+        text_pattern = re.search(r'sentiment\s*:\s*\**\s*(Positive|Negative)', clean_text, re.IGNORECASE)
+        if text_pattern:
+            sentiment = text_pattern.group(1).capitalize()
+        else:
+            # 2. ถ้ายังไม่เจออีก ให้เอาตัวสุดท้ายที่ปรากฏในข้อความ (Final Conclusion)
+            all_matches = re.findall(r'\b(Positive|Negative)\b', clean_text, re.IGNORECASE)
+            if all_matches:
+                sentiment = all_matches[-1].capitalize()
+
+    # 3. รวม Reasoning เพื่อบันทึกลงตาราง
+    if raw_json_str:
+        final_reasoning = f"THINKING:\n{think_log}\n\nRAW_JSON:\n{raw_json_str}".strip()
+    else:
+        final_reasoning = f"THINKING:\n{think_log}\n\nPLAIN_TEXT_RESPONSE:\n{clean_text}".strip()
     
-    # 3. รวม "สิ่งที่คิด" กับ "ก้อน JSON" เข้าด้วยกันเพื่อลงช่อง Reasoning
-    final_reasoning = f"THINKING:\n{think_log}\n\nRAW_JSON:\n{raw_json_str}".strip()
-    
-    if not think_log and not json_match:
+    # กรณีฉุกเฉินถ้าไม่มีอะไรเลย
+    if not final_reasoning:
         final_reasoning = full_output
 
     return {
