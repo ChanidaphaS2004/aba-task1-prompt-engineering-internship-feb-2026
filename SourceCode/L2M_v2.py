@@ -5,8 +5,8 @@ import pandas as pd
 from openai import OpenAI
 from tqdm import tqdm
 
-INPUT_CSV_PATH = "./data/data_sentiment_no_Off.csv" 
-OUTPUT_PATH = "./result/Sentiment_All_Results_LtoM_v2_1.5b.csv"
+INPUT_CSV_PATH = "../Data/data_sentiment_no_Off.csv" 
+OUTPUT_PATH = "../Result/Sentiment_All_Results_LtoM_v2_1.5b.csv"
 
 client = OpenAI(base_url="http://localhost:11434/v1", api_key="ollama")
 MODEL_NAME = "deepseek-r1:1.5b"

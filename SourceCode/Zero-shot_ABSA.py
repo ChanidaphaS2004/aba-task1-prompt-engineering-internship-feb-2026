@@ -9,8 +9,8 @@ from collections import Counter
 from tqdm import tqdm
 
 # ตั้งค่าที่อยู่ไฟล์ในเครื่อง (Local Path)
-INPUT_CSV_PATH = "./data/data_sentiment_no_Off.csv" 
-OUTPUT_COMBINED_PATH = "./result/Sentiment_All_ResultsABSA_no_TopicOff_1.5b.csv"
+INPUT_CSV_PATH = "../Data/data_sentiment_no_Off.csv" 
+OUTPUT_COMBINED_PATH = "../Result/Sentiment_All_ResultsABSA_no_TopicOff_1.5b.csv"
 
 print("✅ โหลด Library และตั้งค่า Path เรียบร้อย")
 
@@ -141,3 +141,5 @@ for idx, row in tqdm(df_input.iterrows(), total=len(df_input)):
 pd.DataFrame(combined_results).to_csv(OUTPUT_COMBINED_PATH, index=False, encoding='utf-8-sig')
 print(f"✅ บันทึกเสร็จแล้วที่: {OUTPUT_COMBINED_PATH}")
 
+
+# %%

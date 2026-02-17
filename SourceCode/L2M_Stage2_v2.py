@@ -5,8 +5,8 @@ import pandas as pd
 import json
 from openai import OpenAI
 from tqdm import tqdm
-INPUT_STAGE1_PATH = "result/Sentiment_All_Results_L2M_Stage1_ver2EP2_1.5b.csv" 
-OUTPUT_STAGE2_PATH = "result/Sentiment_All_Results_L2M_Stage2_ver2_1.5b.csv"
+INPUT_STAGE1_PATH = "../Result/Sentiment_All_Results_L2M_Stage1_ver2EP2_1.5b.csv" 
+OUTPUT_STAGE2_PATH = "../Result/Sentiment_All_Results_L2M_Stage2_ver2_1.5b.csv"
 
 client = OpenAI(
     base_url="http://localhost:11434/v1",

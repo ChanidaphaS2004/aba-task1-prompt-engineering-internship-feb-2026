@@ -7,8 +7,8 @@ from openai import OpenAI
 from collections import Counter
 from tqdm import tqdm
 
-INPUT_CSV_PATH = "./data/data_sentiment_no_Off.csv" 
-OUTPUT_COMBINED_PATH = "./result/Sentiment_All_Results_4shot_1.5b.csv"
+INPUT_CSV_PATH = "../Data/data_sentiment_no_Off.csv" 
+OUTPUT_COMBINED_PATH = "../Result/Sentiment_All_Results_4shot_1.5b.csv"
 
 # %% [2] @title 2. เชื่อมต่อ Ollama
 client = OpenAI(
