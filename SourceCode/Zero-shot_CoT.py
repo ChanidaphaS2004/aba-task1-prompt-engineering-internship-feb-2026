@@ -1,3 +1,5 @@
+#Code สำหรับPromt: Zero-shot CoT ทั้ง Single CoT และ Double CoT
+# ---------------------------------------------------
 # %% [1] @title 1. Library และการตั้งค่า Local Path
 import os
 import json

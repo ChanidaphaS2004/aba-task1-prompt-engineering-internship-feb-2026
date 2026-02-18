@@ -1,3 +1,5 @@
+#Code สำหรับPromt: Four-shot จาก งานวิจัย Nonraphan
+# ---------------------------------------------------
 # %% [1] @title 1. Library และการตั้งค่า
 import os
 import json

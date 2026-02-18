@@ -1,3 +1,6 @@
+#Code สำหรับPromt: Least to Most Stage1 Decomposition (เวอร์ชัน JSON Output)
+#Issue: โมเดลตอบเป็นภาษาจีน หรือไม่ตอบ Sub-Question ออกมาเลย
+# ---------------------------------------------------
 # %% [1] @title 1. Library และการตั้งค่า Local Path
 import os
 import re

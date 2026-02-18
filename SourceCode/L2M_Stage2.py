@@ -1,4 +1,5 @@
-
+#Code สำหรับPromt: Least to Most Stage2 Solve Sub-question 
+# ---------------------------------------------------
 # %% [1] การตั้งค่า Path และโมเดล
 import os
 import re

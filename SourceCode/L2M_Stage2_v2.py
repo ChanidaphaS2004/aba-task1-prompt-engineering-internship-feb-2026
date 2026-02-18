@@ -1,3 +1,7 @@
+#Code สำหรับPromt: Least to Most Stage2 Solve Sub-question Ver.2
+#ปรับ Promt ต่างจาก Ver.1 โดยเพิ่มตัวอย่างการตอบSub-question 
+#แก้ไขปัญหา infinite loop
+# ---------------------------------------------------
 # %% [1] การตั้งค่า Path และโมเดล
 import os
 import re

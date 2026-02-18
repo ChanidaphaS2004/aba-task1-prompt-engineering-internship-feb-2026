@@ -1,3 +1,7 @@
+#Code สำหรับPromt: Least to Most Stage1 Decomposition Ver.2
+#ปรับ Promt ต่างจาก Ver.1 เพิ่ม Tag [SUB_Q]และไม่ให้มี and ในSub-question
+#ปรับฟังก์ชันสกัด Sub-questions 
+# ---------------------------------------------------
 # %% [1] @title 1. Library และการตั้งค่า Local Path
 import os
 import re

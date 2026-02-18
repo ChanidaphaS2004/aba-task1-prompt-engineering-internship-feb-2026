@@ -1,3 +1,5 @@
+#Code สำหรับPromt: Zero-shot จาก งานวิจัย Nonraphan
+# ---------------------------------------------------
 # %% [1] @title 1. Library และการตั้งค่า Local Path
 import os
 import json

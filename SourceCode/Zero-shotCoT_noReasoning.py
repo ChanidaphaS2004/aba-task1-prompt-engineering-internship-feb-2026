@@ -1,3 +1,6 @@
+#Code สำหรับPromt: Zero-shot CoT+ABSA(Aspect-Based Sentiment Analysis)
+#ไม่มี reasoning_trace
+# ---------------------------------------------------
 # %% [1] @title 1. Library และการตั้งค่า Local Path
 import os
 import json
