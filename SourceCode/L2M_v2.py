@@ -10,7 +10,7 @@ from openai import OpenAI
 from tqdm import tqdm
 
 INPUT_CSV_PATH = "../Data/data_sentiment_no_Off.csv" 
-OUTPUT_PATH = "../Result/Sentiment_All_Results_LtoM_v2_1.5b.csv"
+OUTPUT_PATH = "../Result/Sentiment_All_Results_LtoM_v2EP3_1.5b.csv"
 
 client = OpenAI(base_url="http://localhost:11434/v1", api_key="ollama")
 MODEL_NAME = "deepseek-r1:1.5b"
@@ -28,6 +28,22 @@ def call_model(prompt, temp):
     except Exception as e:
         return f"Error: {str(e)}"
 
+def clean_output(text, is_synthesis=False):
+    if not isinstance(text, str): return text
+    
+    # 1. รีดบรรทัดและช่องว่าง
+    text = text.replace('\n', ' ').replace('\r', ' ')
+    text = re.sub(r'\s+', ' ', text).strip()
+    
+    if is_synthesis:
+        # 2. ตัดจบที่ประโยค "The answer is [Positive/Negative]" ชุดแรกที่เจอ
+        # (.*?) = เอาทุกอย่างข้างหน้า
+        # The answer is\s* = จนถึงวลีนี้
+        # (?:Positive|Negative) = จบที่คำว่า Positive หรือ Negative
+        match = re.search(r"(.*?The answer is\s*(?:Positive|Negative)\.?)", text, re.IGNORECASE)
+        if match:
+            return match.group(1).strip()      
+    return text
 
 def parse_sentiment(text):
     """สกัดผลลัพธ์ Positive/Negative จาก Synthesis"""
@@ -199,12 +215,12 @@ for idx, row in tqdm(df_input.iterrows(), total=len(df_input)):
     
     final_results.append({
         "ID": row['ID'],
-        "Content": content,
-        "Sub_Q1": q1,
-        "Ans1": a1,
-        "Sub_Q2": q2,
-        "Ans2": a2,
-        "Final_Synthesis": synthesis,
+        "Content": clean_output(content),
+        "Sub_Q1": clean_output(q1),
+        "Ans1": clean_output(a1),
+        "Sub_Q2": clean_output(q2),
+        "Ans2": clean_output(a2),
+        "Final_Synthesis": clean_output(synthesis, is_synthesis=True),
         "Predicted_Sentiment": sentiment
     })
     
@@ -213,3 +229,5 @@ for idx, row in tqdm(df_input.iterrows(), total=len(df_input)):
 
 pd.DataFrame(final_results).to_csv(OUTPUT_PATH, index=False, encoding='utf-8-sig')
 print(f"✅ ประมวลผลเสร็จสิ้น! บันทึกที่: {OUTPUT_PATH}")
+
+# %%

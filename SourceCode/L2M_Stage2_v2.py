@@ -3,14 +3,12 @@
 #แก้ไขปัญหา infinite loop
 # ---------------------------------------------------
 # %% [1] การตั้งค่า Path และโมเดล
-import os
 import re
 import pandas as pd
-import json
 from openai import OpenAI
 from tqdm import tqdm
-INPUT_STAGE1_PATH = "../Result/Sentiment_All_Results_L2M_Stage1_ver2EP2_1.5b.csv" 
-OUTPUT_STAGE2_PATH = "../Result/Sentiment_All_Results_L2M_Stage2_ver2_1.5b.csv"
+INPUT_STAGE1_PATH = "../Result/Sentiment_All_Results_L2M_Stage1_ver2_1.5b.csv" 
+OUTPUT_STAGE2_PATH = "../Result/Sentiment_All_Results_L2M_Stage2_ver2EP3_1.5b.csv"
 
 client = OpenAI(
     base_url="http://localhost:11434/v1",
@@ -30,9 +28,25 @@ def call_model(prompt, temp):
         return re.sub(r'<think>.*?</think>', '', full_text, flags=re.DOTALL).strip()
     except Exception as e:
         return f"Error: {str(e)}"
-
+    
+def clean_output(text, is_synthesis=False):
+    if not isinstance(text, str): return text
+    
+    # 1. รีดบรรทัดและช่องว่างให้เรียบก่อน
+    text = text.replace('\n', ' ').replace('\r', ' ')
+    text = re.sub(r'\s+', ' ', text).strip()
+    
+    if is_synthesis:
+        # 2. ตัดจบที่ประโยค "The answer is [Positive/Negative]" ชุดแรกที่เจอ
+        # (.*?) = เอาทุกอย่างข้างหน้า
+        # The answer is\s* = จนถึงวลีนี้
+        # (?:Positive|Negative) = จบที่คำว่า Positive หรือ Negative
+        match = re.search(r"(.*?The answer is\s*(?:Positive|Negative)\.?)", text, re.IGNORECASE)
+        if match:
+            return match.group(1).strip()      
+    return text
+    
 def parse_sentiment(text):
-    """สกัดผลลัพธ์จากประโยคสุดท้าย"""
     lines = text.strip().split('\n')
     last_line = lines[-1] if lines else text
     if re.search(r'\bPositive\b', last_line, re.I): return "Positive"
@@ -127,13 +141,13 @@ for idx, row in tqdm(df.iterrows(), total=len(df)):
     
     results.append({
         "ID": row['ID'],
-        "Content": content,
-        "Sub_Q1": q1,
-        "Ans1": ans1,
-        "Sub_Q2": q2,
-        "Ans2": ans2,
-        "Final_Synthesis": synthesis,
-        "Predicted_Sentiment": sentiment
+        "Content": clean_output(content),
+        "Sub_Q1": clean_output(q1),
+        "Ans1": clean_output(ans1),         
+        "Sub_Q2": clean_output(q2),
+        "Ans2": clean_output(ans2),        
+        "Final_Synthesis": clean_output(synthesis, is_synthesis=True), 
+        "Final_Sentiment": sentiment
     })
     
     if (idx + 1) % 5 == 0:
