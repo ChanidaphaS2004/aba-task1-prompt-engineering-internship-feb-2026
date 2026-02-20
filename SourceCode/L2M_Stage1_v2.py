@@ -9,8 +9,8 @@ import pandas as pd
 from openai import OpenAI
 from tqdm import tqdm
 
-INPUT_CSV_PATH = "../Data/data_sentiment_no_Off.csv" 
-OUTPUT_STAGE1_PATH = "../Result/Sentiment_All_Results_L2M_Stage1_ver2EP2_1.5b.csv"
+INPUT_CSV_PATH = "./data/data_sentiment_no_Off.csv" 
+OUTPUT_STAGE1_PATH = "./result/Sentiment_All_Results_L2M_Stage1_ver2EP2_1.5b.csv"
 
 # %% [2] @title 2. เชื่อมต่อ Ollama (Local)
 client = OpenAI(
